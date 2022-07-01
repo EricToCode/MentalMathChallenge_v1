@@ -1,0 +1,103 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+/* remove basic style for the page and border-box */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* centering to demo */
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 20px 'Montserrat', sans-serif;
+}
+
+ /* the container */
+.math-games {
+    background: #fcfcfc;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 5px 10px #34495e;
+    width: 400px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+  /* input element*/
+input {
+  border: 1px dashed #333;
+  outline: none;
+  border-radius: 5px;
+  background: none;
+}
+.operand1 {
+  color: black;
+}
+.operand2 {
+  color: black;
+}
+/* span tag*/
+.math-games span {
+  font: 40px "Arial";
+}
+/* styling the button */
+button {
+  border: none;
+  background: #1abc9c;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 20px;
+}
+button:hover {
+  cursor: pointer;
+}
+.answer-box {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.timer {
+    font: "Arial";
+    font-size: medium;
+    font-weight: bold;
+}
+
+/* Styling the modal */
+.modal-container {
+    position: absolute;
+    right: 50px; 
+    bottom: 40px;
+    width: 300px;
+    height: 100px;
+    border: 1px solid #555;
+    padding: 20px;
+    background: #e74c3c;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    box-shadow: 2px 2px 2px #555;
+    display: none;
+}
+.close {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 40px;
+}
+.close:hover {
+    cursor: pointer;
+}
+
+.form {
+    padding: 0px;
+    border: 0px;
+}
