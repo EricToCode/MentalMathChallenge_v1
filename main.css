@@ -14,20 +14,37 @@ body {
   justify-content: center;
   align-items: center;
   font: 20px 'Montserrat', sans-serif;
+  background-color: #1e2124;
+}
+
+.light-body {
+  background-color: #F6F6F6;
+}
+
+/* dark mode button */
+.settings {
+  border: none;
+  background: #7289da;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 20px;
+  position: absolute;
+  top:0;
+  right:0;
 }
 
  /* the container */
 .math-games {
-    background: #fcfcfc;
+    background-color: #36393E;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 2px 5px 10px #34495e;
     width: 400px;
     height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: lightgray;
 }
 
   /* input element*/
@@ -37,12 +54,7 @@ input {
   border-radius: 5px;
   background: none;
 }
-.operand1 {
-  color: black;
-}
-.operand2 {
-  color: black;
-}
+
 /* span tag*/
 .math-games span {
   font: 40px "Arial";
@@ -50,7 +62,7 @@ input {
 /* styling the button */
 button {
   border: none;
-  background: #1abc9c;
+  background: #7289da;
   color: #fff;
   border-radius: 5px;
   font-size: 20px;
@@ -100,4 +112,9 @@ button:hover {
 .form {
     padding: 0px;
     border: 0px;
+}
+
+.light-mode {
+  background-color: lightgray;
+  color: #1e2124;
 }

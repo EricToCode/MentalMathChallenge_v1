@@ -20,6 +20,20 @@ function startTimer(timerDuration) {
     }, 1000);
 }
 
+// dark mode toggle
+function dark() {
+    var backgrd = document.body;
+    backgrd.classList.toggle("light-body");
+    var element = document.getElementById("math-games");
+    element.classList.toggle("light-mode");
+    if (document.getElementById("dark-mode").innerHTML == "Dark Mode") {
+        document.getElementById("dark-mode").innerHTML = "Light Mode";
+    }
+    else if (document.getElementById("dark-mode").innerHTML == "Light Mode") {
+        document.getElementById("dark-mode").innerHTML = "Dark Mode";
+    }
+}
+
 // function to show endgame page
 function endgame() {
     document.getElementById("operand1").innerHTML = "Score:";
