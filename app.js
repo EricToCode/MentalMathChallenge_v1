@@ -164,7 +164,7 @@ function generateQuestion() {
         const divisors = findDivisors(temp);
         document.getElementById("operand1").innerHTML = temp;
         document.getElementById("operator").innerHTML = "/";
-        document.getElementById("operand2").innerHTML = divisors[getRandomInt(divisors.length-1)];
+        document.getElementById("operand2").innerHTML = divisors[getRandomInt(divisors.length)-1];
     }
 }
 
